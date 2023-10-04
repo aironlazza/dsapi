@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Airon Lazzaretti" />
+    <meta name="description" content="Site de informações sobre os atributos das armas do jogo Dark Souls." />
+    <meta name="keywords" content="Jogo, game, videogame, dark souls, fromsoftware, api, armas, fantasia" />
+
     <link rel="stylesheet" href="style.css">
     <title>Dark Souls Weapons API</title>
 </head>
 <body>
     <header>
         <div id="cabe">
-            <a id="logo-link" href="">
+            <a id="logo-link" href="index.html">
                 <img id="logo" src="img/logo.png">
             </a>
             <div id="nome">
@@ -18,33 +22,204 @@
             </div>
         </div>
     </header>
-    <div class="hover-bg" id="hover-dagger">
-        <p id="hover-nome">Vazio (apagar)</p>
-        <div id="hover-grid">
-            <div class="icon">
-                <a class="icon-a">
-                    <img class="hover-foto" src="img/daggers/dagger.png">
-                </a>
+    <div id="paineis">
+        <div class="hover-bg">
+            <p id="hover-nome">Weapon Name</p>
+            <div id="hover-grid">
+                <div class="icon">
+                    <a class="icon-a" id="26">
+                        <img class="hover-foto" src="img/daggers/dagger.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a class="icon-a" id="84">
+                        <img class="hover-foto" src="img/daggers/parrying-dagger.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a class="icon-a" id="4">
+                        <img class="hover-foto" src="img/daggers/bandits-knife.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a class="icon-a" id="47">
+                        <img class="hover-foto" src="img/daggers/ghost-blade.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a class="icon-a" id="27">
+                        <img class="hover-foto" src="img/daggers/dark-silver-tracer.png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <a class="icon-a" id="88">
+                        <img class="hover-foto" src="img/daggers/priscillas-dagger.png">
+                    </a>
+                </div>
+                
             </div>
-            <div class="icon">
-                <a class="icon-a">
-                    <img class="hover-foto" src="img/daggers/dagger.png">
-                </a>
-            </div>
-            <div class="icon">
-                <a class="icon-a">
-                    <img class="hover-foto" src="img/daggers/dagger.png">
-                </a>
-            </div>
-            <div class="icon">
-                <a class="icon-a">
-                    <img class="hover-foto" src="img/daggers/dagger.png">
-                </a>
-            </div>
-            <div class="icon">
-                <a class="icon-a">
-                    <img class="hover-foto" src="img/daggers/dagger.png">
-                </a>
+        </div>
+        <div class="stats-bg" id="stats-dagger">
+            <div id="stats-grid">
+                <div class="bloco" id="top-left">
+                    <table>
+                        <p id="name">Weapon Name</p>
+                        <tr> <td id="weapon_category">Weapon Type</td> <td></td> </tr>
+                        <tr>
+                            <td>
+                                <img src="img/stats/wei.png" title="weight">
+                                Weight
+
+                            </td>
+                            <td id="weight"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/stats/dur.png" title="durability">
+                                Durability
+                            </td>
+                            <td id="durability"></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="bloco" id="top-right">
+                    <img src="img/preview.png" id="preview">
+                </div>
+                <div class="bloco" id="middle-left">
+                    <table>
+                        <p class="titulo">Attack power</p>
+                        <tr>
+                            <td>
+                                <img src="img/stats/dmg_phy.png" title="physical damage">
+                                Physical
+                            </td>
+                            <td id="dmg_physical"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/stats/dmg_magi.png" title="magic damage">
+                                Magic
+                            </td>
+                            <td id="dmg_magic"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/stats/dmg_fire.png" title="fire damage">
+                                Fire
+                            </td>
+                            <td id="dmg_fire"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/stats/dmg_lightn.png" title="lightning damage">
+                                Lightning
+                            </td>
+                            <td id="dmg_lightning"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bloco" id="middle-right">
+                    <table>
+                        <p class="titulo">Guard Absorption</p>
+                        <tr>
+                            <td>
+                                <img src="img/stats/prot_phy.png" title="physical absorption">
+                                Physical
+                            </td>
+                            <td id="prot_physical"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/stats/prot_magi.png" title="magic absorption">
+                                Magic
+                            </td>
+                            <td id="prot_magic"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/stats/prot_fire.png" title="fire absorption">
+                                Fire
+                            </td>
+                            <td id="prot_fire"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/stats/prot_lightn.png" title="lightning absorption">
+                                Lightning
+                            </td>
+                            <td id="prot_lightning"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bloco" id="chao">
+                    <p class="titulo">Attribute bonus</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/stats/str.png" title="strength">
+                            </td>
+                            <td id="bonus_strength"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/stats/dex.png" title="dexterity">
+                            </td>
+                            <td id="bonus_dexterity"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/stats/int.png" title="intelligence">
+                            </td>
+                            <td id="bonus_intelligence"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/stats/fai.png" title="faith">
+                            </td>
+                            <td id="bonus_faith"></td>
+                        </tr>
+                    </table>
+                    <p class="titulo" id="req">Attribute requirement</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/stats/str.png" title="strength">
+                            </td>
+                            <td id="req_strength"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/stats/dex.png" title="dexterity">
+                            </td>
+                            <td id="req_dexterity"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/stats/int.png" title="intelligence">
+                            </td>
+                            <td id="req_intelligence"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/stats/fai.png" title="faith">
+                            </td>
+                            <td id="req_faith"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

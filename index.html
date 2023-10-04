@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Airon Lazzaretti" />
+    <meta name="description" content="Site de informações sobre os atributos das armas do jogo Dark Souls." />
+    <meta name="keywords" content="Jogo, game, videogame, dark souls, fromsoftware, api, armas, fantasia" />
+
     <link rel="stylesheet" href="style.css">
     <title>Dark Souls Weapons API</title>
 </head>
 <body>
     <header>
             <div id="cabe">
-                <a id="logo-link" href="">
+                <a id="logo-link" href="index.html">
                     <img id="logo" src="img/logo.png">
                 </a>
                 <div id="nome">
@@ -18,11 +22,26 @@
                 </div>
             </div>
     </header>
-    <div id="top">
-        <p id="wc">Weapon Categories</p>
-    </div>
-    <div id="middle">
-        
+    <div id="index-body">
+        <div id="top">
+            <p id="wc">Weapon Categories</p>
+        </div>
+        <div id="middle">
+            <div id="cat-grid">
+                <a href="dagger.html" class="cat-link">
+                    <div class="cat">
+                        <img src="img/class/dagger.PNG" class="cat-img">
+                    </div>
+                    Daggers
+                </a> 
+                <a href="straight.html" class="cat-link">
+                    <div class="cat">
+                        <img src="img/class/straight.PNG" class="cat-img">
+                    </div>
+                    Straight Swords
+                </a> 
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
