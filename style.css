@@ -87,7 +87,7 @@ a{
 }
 #cat-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 90vw;
     margin: auto;
     justify-items: center;
@@ -142,7 +142,7 @@ a{
     margin-right: 5.1vw;
     margin-top: 4vw;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .icon{
     background-image: url(img/dish.png);
@@ -287,12 +287,12 @@ table{
     margin-top: 2vw;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1300px){
     #index-body{
         background-image: url(img/body-bg-pc.png);
     }
     #cat-grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .cat-link{
         height: 26vw;
@@ -306,32 +306,6 @@ table{
     .cat-img{
         margin-top: 2vw;
         height: 18vw;
-    }
-}
-@media (max-width: 1200px){
-    header{
-        background-image: url(img/header2.png);
-    }
-    #cabe{
-        margin: 0vw 10vw 0vw 10vw;
-    }
-    /* #top{
-        background-image: url(img/bg-top2.jpg);
-    } */
-}
-@media (max-width: 650px){
-    header{
-        background-image: url(img/header3.png);
-    }
-    #titulo{
-        font-size: 3vh;
-    }
-    #sub{
-        font-size: 2.5vh;
-    }
-    #nome{
-        background-position: 0 3.4vh;
-
     }
     #paineis{
         display: block;
@@ -374,6 +348,39 @@ table{
     #preview{
         height: 15vw;
     }
+}
+
+@media (max-width: 1200px){
+    header{
+        background-image: url(img/header2.png);
+    }
+    #cabe{
+        margin: 0vw 10vw 0vw 10vw;
+    }
+    /* #top{
+        background-image: url(img/bg-top2.jpg);
+    } */
+}
+
+@media (max-width: 1000px){
+
+    
+}
+
+@media (max-width: 650px){
+    header{
+        background-image: url(img/header3.png);
+    }
+    #titulo{
+        font-size: 3vh;
+    }
+    #sub{
+        font-size: 2.5vh;
+    }
+    #nome{
+        background-position: 0 3.4vh;
+    }
+    
 }
 @media (max-width: 480px){
     header{

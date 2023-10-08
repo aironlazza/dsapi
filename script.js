@@ -1,6 +1,6 @@
 let iconArray = document.getElementsByClassName("icon-a")
 
-let hoverNome = document.getElementById("hover-nome")
+// let hoverNome = document.getElementById("hover-nome")
 let preview = document.getElementById("preview")
 
 let nome = document.getElementById("name")
@@ -22,7 +22,7 @@ let bonusFaith = document.getElementById("bonus_faith")
 let reqStr = document.getElementById("req_strength")
 let reqDex = document.getElementById("req_dexterity")
 let reqInt = document.getElementById("req_intelligence")
-let reqFaith= document.getElementById("req_faith")
+let reqFaith = document.getElementById("req_faith")
 
 let endpoint = "https://jgalat.github.io/ds-weapons-api/"
 fetch(endpoint)
@@ -38,13 +38,12 @@ fetch(endpoint)
         bonus = arma.bonus
         req = arma.requirements
 
-        hoverNome.innerHTML = arma.name
-        nome.innerHTML = dados[this.id].name
-        // .innerHTML = dados[this.id].
-        category.innerHTML = dados[this.id].weapon_type
-        weight.innerHTML = dados[this.id].weight
+        // hoverNome.innerHTML = arma.name
+        nome.innerHTML = arma.name
+        category.innerHTML = arma.weapon_type
+        weight.innerHTML = arma.weight
         durability.innerHTML = arma.durability
-        dmgPhysical.innerHTML = arma.damage.physical
+        dmgPhysical.innerHTML = dano.physical
         dmgMagic.innerHTML = dano.magic
         dmgFire.innerHTML = dano.fire
         dmgLightning.innerHTML = dano.lightning
@@ -63,7 +62,6 @@ fetch(endpoint)
 
         let foto = this.querySelector(".hover-foto")
         preview.src = foto.src
-
 
       }, false)
     }
